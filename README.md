@@ -14,18 +14,6 @@ pip install pandas numpy
 ```
 
 
-### 2. Get Song Recommendations
-
-```python
-def print_recommendations(song_id):
-    similar_songs = np.array(model.wv.most_similar(positive=str(song_id), topn=5))
-    return songs_df.iloc[similar_songs]
-
-# Get recommendations for song ID 2177
-recommendations = print_recommendations(2177)
-print(recommendations)
-```
-
 ## Model Parameters
 
 - `vector_size=100`: Dimension of song embeddings
